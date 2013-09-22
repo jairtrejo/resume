@@ -17,6 +17,8 @@
 
 \definecolor{white}{RGB}{255,255,255}
 
+\definecolor{darkblue}{RGB}{19,74,112}
+
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
@@ -37,7 +39,7 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
+  \colorlet{fillheader}{darkblue}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
@@ -76,7 +78,7 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\thinfont #1}\quad{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
