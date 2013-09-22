@@ -1,6 +1,8 @@
 # My automated resume
 A collection of scripts for fetching my resume data from LinkedIn and a customized version of Adrien Friggeri's excellent resume template.
 
+License for the original template follows.
+
 # License
 
 Copyright (C) 2012, Adrien Friggeri
