@@ -21,6 +21,14 @@
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 
+\usepackage{fontawesome}
+\newfontfamily{\FA}{FontAwesome Regular}
+\def\home{{\FA \faHome}}
+\def\github{{\FA \faGithub}}
+\def\coderwall{{\FA \faCog}}
+\def\linkedin{{\FA \faLinkedinSign}}
+\def\mystar{{\FA \faStar}}
+
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
 \begin{document}
@@ -42,7 +50,7 @@ native spanish
 fluent in english
 intermediate japanese
 \section{programming}
-{\color{red} $\ast$} Python
+{\color{red} \mystar} Python
 Javascript, Clojure
 CSS3 \& HTML5
 \end{aside}
@@ -97,25 +105,25 @@ Web project developer, manager and consultant. I have been developing software p
 %------------------------------------------------
 \entry
 {Home page}
-{Home page and blog}
+{\home\enspace Home page and blog}
 {}
 {http://jairtrejo.mx}
 %------------------------------------------------
 \entry
 {Github}
-{Open source projects}
+{\github\enspace Open source projects}
 {}
 {http://github.com/jairtrejo}
 %------------------------------------------------
 \entry
 {Coderwall}
-{Short web development tips}
+{\coderwall\enspace Short web development tips}
 {}
 {http://coderwall.com/jairtrejo}
 %------------------------------------------------
 \entry
 {Linked In}
-{Professional information and networking}
+{\linkedin\enspace Professional information and networking}
 {}
 {http://mx.linkedin.com/in/jairtrejo}
 %------------------------------------------------
